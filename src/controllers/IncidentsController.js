@@ -16,6 +16,7 @@ module.exports = {
             'ongs.email',
             'ongs.whatsapp',
             'ongs.insta',
+            'ongs.picpay',
             'ongs.city',
             'ongs.uf',
                 ]);
