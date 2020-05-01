@@ -10,12 +10,13 @@ module.exports = {
 
 
     async create(request, response){
-        const { nome, email, whatsapp, insta, picpay, city, uf } = request.body;
+        const { nome, IDCriada, email, whatsapp, insta, picpay, city, uf } = request.body;
         const id = crypto.randomBytes(4).toString('HEX');
 
         await connection('ongs').insert({ //aqui o connection está inserindo tais dados descritos em uma knex.table chamada ongs.
             id,
             nome,
+            IDCriada,
             email,
             whatsapp,
             insta,

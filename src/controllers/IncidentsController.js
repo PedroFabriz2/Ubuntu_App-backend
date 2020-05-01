@@ -13,6 +13,7 @@ module.exports = {
         .select([
             'incidents.*',
             'ongs.nome',
+            'ongs.IDCriada',
             'ongs.email',
             'ongs.whatsapp',
             'ongs.insta',
