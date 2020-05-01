@@ -1,1 +1,1 @@
-web: npx knex migrate:rollback && npx knex migrate:latest && npm start
+web: npx knex migrate:latest && npm start
