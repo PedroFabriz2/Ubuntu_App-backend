@@ -13,6 +13,7 @@ const routes = express.Router();
 
 routes.get('/ongs', OngController.index);
 routes.post('/ongs', OngController.create);//criar a rota principal...isso arruma o erro: 'Canot get'
+routes.delete('/ongs/delete', OngController.delete);
 
 routes.post('/incidents', IncidentsController.create);
 routes.get('/incidents', IncidentsController.index);
